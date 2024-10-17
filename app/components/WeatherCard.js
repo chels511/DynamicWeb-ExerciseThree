@@ -13,7 +13,7 @@ export default function WeatherCard({
   // Define color ranges
 
   const getColorForTemperature = (currentTemperature) => {
-    if (currentTemperature <= 0) return "blue";
+    if (currentTemperature <= 30) return "blue";
     if (currentTemperature <= 50) return "lightblue";
     if (currentTemperature <= 60) return "yellow";
     if (currentTemperature <= 80) return "orange";
