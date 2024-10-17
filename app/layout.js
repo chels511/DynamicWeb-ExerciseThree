@@ -1,14 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const poppinsSemi = localFont({
+  src: "./fonts/Poppins-SemiBold.ttf",
+  variable: "--font-poppins-semi",
   weight: "100 900",
 });
 
@@ -20,9 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={`${poppinsSemi.variable}`}>{children}</body>
     </html>
   );
 }
